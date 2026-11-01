@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Título SEO optimizado para la pestaña y buscadores -->
+  <title>AuditNomina RD | Outsourcing de Nómina & Gestión TSS</title>
+  
+  <!-- Metadatos de SEO Principal -->
+  <meta name="description" content="Gestión e historia de nómina sin multas de la TSS ni la DGII. Retenciones IR-3, liquidaciones y cumplimiento laboral en RD con el respaldo de Anchi Advisors.">
+  <meta name="keywords" content="outsourcing de nomina republica dominicana, tss tss dominicana, ir3 dgii, calculo de prestaciones laborales, asesoría laboral santo domingo">
+  <meta name="author" content="Anchi Advisors">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon integrado (Icono para la pestaña del navegador) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231e3a8a'/><text y='.9em' font-size='70' x='15'>📊</text></svg>">
+
+  <!-- Meta etiquetas para vista previa en WhatsApp y Redes Sociales (Open Graph) -->
+  <meta property="og:title" content="AuditNomina RD | Outsourcing de Nómina & Gestión TSS">
+  <meta property="og:description" content="Protege tu empresa frente a la TSS, DGII y el Ministerio de Trabajo. Procesa tu nómina sin errores ni multas laborales.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://andersonchicon.github.io/AuditNominaRd/">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    body {
+      background-color: #f8fafc;
+      color: #0f172a;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+    }
+
+    .logo-main {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #1e3a8a;
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .logo-sub {
+      font-size: 0.72rem;
+      color: #64748b;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .btn-header {
+      background-color: #25d366;
+      color: #ffffff;
+      font-weight: 700;
+      padding: 0.55rem 1.1rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.88rem;
+      box-shadow: 0 4px 6px -1px rgba(37, 211, 102, 0.2);
+    }
+
+    .btn-header:hover {
+      background-color: #22c55e;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+      color: #ffffff;
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+
+    .hero-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(59, 130, 246, 0.15);
+      color: #60a5fa;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      padding: 0.4rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.5px;
+    }
+
+    .hero h1 span {
+      color: #60a5fa;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #94a3b8;
+      margin-bottom: 2rem;
+      max-width: 750px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-group {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media(min-width: 640px) {
+      .hero h1 { font-size: 3.25rem; }
+      .cta-group { flex-direction: row; }
+    }
+
+    .btn-primary {
+      background-color: #25d366;
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      padding: 1rem 2rem;
+      border-radius: 0.75rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      box-shadow: 0 10px 15px -3px rgba(37, 211, 102, 0.3);
+      width: 100%;
+      justify-content: center;
+    }
+
+    @media(min-width: 640px) {
+      .btn-primary { width: auto; }
+    }
+
+    .btn-primary:hover {
+      background-color: #22c55e;
+    }
+
+    /* Benefits */
+    .features {
+      padding: 4rem 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-title h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #0f172a;
+    }
+
+    .section-title p {
+      color: #64748b;
+      margin-top: 0.5rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media(min-width: 768px) {
+      .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 1rem;
+      padding: 2rem;
+    }
+
+    .card-icon {
+      width: 3rem;
+      height: 3rem;
+      background: #dbeafe;
+      color: #1e3a8a;
+      border-radius: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: #64748b;
+      font-size: 0.95rem;
+    }
+
+    /* Services / Scope */
+    .services-section {
+      background: #f1f5f9;
+      padding: 4rem 1.5rem;
+    }
+
+    .services-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    @media(min-width: 768px) {
+      .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .srv-card {
+      background: #ffffff;
+      border-radius: 1.25rem;
+      padding: 2.5rem;
+      border: 2px solid #e2e8f0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .srv-card.featured {
+      border-color: #1e3a8a;
+      box-shadow: 0 20px 25px -5px rgba(30, 58, 138, 0.1);
+    }
+
+    .srv-title {
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+
+    .srv-subtitle {
+      color: #64748b;
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .srv-features {
+      list-style: none;
+      margin-bottom: 2rem;
+      flex-grow: 1;
+    }
+
+    .srv-features li {
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.95rem;
+      color: #334155;
+    }
+
+    .srv-features li::before {
+      content: "✓";
+      color: #1e3a8a;
+      font-weight: 800;
+    }
+
+    /* FAQ */
+    .faq {
+      background: #ffffff;
+      padding: 4rem 1.5rem;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #f1f5f9;
+      padding-bottom: 1.5rem;
+    }
+
+    .faq-item h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #0f172a;
+    }
+
+    .faq-item p {
+      color: #64748b;
+      font-size: 0.95rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer strong {
+      color: #ffffff;
+    }
+
+    footer a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <a href="#" class="logo">
+        <span class="logo-main">📊 AuditNomina RD</span>
+        <span class="logo-sub">Un servicio de Anchi Advisors</span>
+      </a>
+      <a href="https://wa.me/18496078066?text=Hola,%20quiero%20consultar%20sobre%20el%20servicio%20de%20outsourcing%20de%20n%C3%B3mina" class="btn-header" target="_blank">
+        📲 Consultar por WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="badge">📊 Gestión Integral de Capital Humano, TSS &amp; DGII</div>
+      <h1>Outsourcing de Nómina y TSS <span>Sin Miedo a Multas ni Auditorías</span></h1>
+      <p>Blindamos tu empresa frente a la TSS, la DGII y el Ministerio de Trabajo. Procesamos tu nómina, cálculos de IR-3 y prestaciones laborales con plantillas y estándares de pre-auditoría probados.</p>
+      <div class="cta-group">
+        <a href="https://wa.me/18496078066?text=Hola,%20quiero%20cotizar%20el%20servicio%20de%20n%C3%B3mina%20para%20mi%20empresa" class="btn-primary" target="_blank">
+          🟢 Cotizar Nómina por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section class="features">
+    <div class="section-title">
+      <h2>¿Por qué las empresas tercerizan su nómina con nosotros?</h2>
+      <p>Eliminamos el estrés corporativo y las contingencias legales.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-icon">🛡️</div>
+        <h3>Cero Miedo a la TSS</h3>
+        <p>Evitamos recargos por retrasos, errores en novedades o diferencias en las liquidaciones ante la Tesorería de la Seguridad Social.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚖️</div>
+        <h3>Resguardo Laboral</h3>
+        <p>Cálculos exactos de prestaciones y liquidaciones bajo el estricto cumplimiento del Código de Trabajo dominicano.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>Control Fiscal (DGII)</h3>
+        <p>Determinación correcta de las retenciones salariales y generación impecable de los reportes IR-3 sin sorpresas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios / Alcance -->
+  <section class="services-section">
+    <div class="services-container">
+      <div class="section-title">
+        <h2>Alcance de Nuestros Servicios</h2>
+        <p>Soluciones eficientes respaldadas por nuestra experiencia contable y fiscal.</p>
+      </div>
+      <div class="grid-2">
+        
+        <!-- Paquete Integral -->
+        <div class="srv-card featured">
+          <div class="srv-title">Procesamiento de Nómina</div>
+          <div class="srv-subtitle">Para mantener tus operaciones y pagos al día mes a mes.</div>
+          <ul class="srv-features">
+            <li>Cálculo de sueldos fijos, comisiones y horas extras</li>
+            <li>Determinación precisa de aportes y retenciones de la TSS</li>
+            <li>Generación y validación del formato IR-3 para la DGII</li>
+            <li>Elaboración de volantes de pago profesionales</li>
+            <li>Gestión de novedades (altas, bajas y modificaciones)</li>
+          </ul>
+          <a href="https://wa.me/18496078066?text=Hola,%20me%20interesa%20el%20procesamiento%20mensual%20de%20n%C3%B3mina" class="btn-primary" style="background-color: #1e3a8a;" target="_blank">
+            Contratar Procesamiento
+          </a>
+        </div>
+
+        <!-- Auditoría y Prestaciones -->
+        <div class="srv-card">
+          <div class="srv-title">Cálculos Especiales &amp; Auditoría</div>
+          <div class="srv-subtitle">Ideal para liquidaciones, cierres de año y revisiones preventivas.</div>
+          <ul class="srv-features">
+            <li>Cálculo exacto de prestaciones laborales (Liquidaciones)</li>
+            <li>Auditoría preventiva de nóminas y pasivos laborales</li>
+            <li>Cálculo de regalía pascual y provisiones de vacaciones</li>
+            <li>Saneamiento de inconsistencias ante la TSS</li>
+            <li>Asesoría estratégica en cumplimiento laboral</li>
+          </ul>
+          <a href="https://wa.me/18496078066?text=Hola,%20necesito%20asesoría%20en%20cálculos%20de%20prestaciones%20o%20auditoría%20laboral" class="btn-primary" style="background-color: #1e3a8a;" target="_blank">
+            Consultar Casos Especiales
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Preguntas Frecuentes -->
+  <section class="faq">
+    <div class="faq-container">
+      <div class="section-title">
+        <h2>Preguntas Frecuentes</h2>
+      </div>
+      <div class="faq-item">
+        <h3>¿Cómo se envían las novedades de la nómina cada mes?</h3>
+        <p>Nos envías los cambios (horas extras, nuevos ingresos o salidas) mediante un formato estandarizado y rápido por correo o WhatsApp antes de cada fecha de corte.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿AuditNomina RD realiza los pagos directamente a los empleados?</h3>
+        <p>Te entregamos el reporte e instrucciones estructuradas listas para que ejecutes las transferencias bancarias de forma segura y sin errores de cálculo.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Qué respaldo legal y fiscal tiene el servicio?</h3>
+        <p>Todas nuestras operaciones cuentan con el respaldo directo de la firma de asesores y contadores públicos <strong>Anchi Advisors</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>AuditNomina RD</strong> es un servicio especializado de <a href="https://www.anchiadvisors.com" target="_blank"><strong>Anchi Advisors</strong></a>.</p>
+    <p>Santo Domingo, República Dominicana. Contacto Directo WhatsApp: <strong>849-607-8066</strong></p>
+  </footer>
+
+</body>
+</html>
